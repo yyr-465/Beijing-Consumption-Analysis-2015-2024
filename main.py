@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*- 
 from data_preprocessing import*
 from Consumption_upgrade_indicator import *
 from Drawing import *
@@ -45,4 +46,5 @@ try:
     print("=" * 45 + "\n")
 except Exception as e:
     print(f"⚠️ Skip automated analysis of physical data (please verify CSV column names match): {e}")
+
 
