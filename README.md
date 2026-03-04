@@ -2,7 +2,8 @@
 Empirical analysis of the evolution of consumption structure among Beijing urban and rural residents using Python.
 2015-2024 Empirical Analysis of Beijing Urban and Rural Residents' Consumption Structure Evolution
 
-This project employs Python to conduct in-depth analysis of Beijing's statistical data over the past decade, multidimensionally illustrating the historical progression of consumption upgrades among residents of this megacity—shifting from subsistence-oriented to enjoyment-oriented spending.
+This project employs Python to conduct in-depth analysis of Beijing's statistical data over the past decade,
+multidimensionally illustrating the historical progression of consumption upgrades among residents of this megacity—shifting from subsistence-oriented to enjoyment-oriented spending.
 
 Key Insights
 
@@ -33,5 +34,4 @@ Directory Description
 Challenges and Retrospective
 Dimension Mismatch: Resolved Matplotlib's (9,) vs. (11,) dimension error during radar chart generation using a circular closing algorithm.
 Data Alignment: Ensured strict alignment of urban/rural indicators across years through multi-table joins, maintaining analytical rigor.
-
-Translated with DeepL.com (free version)
+Exception Handling & Robustness: Implemented try-except blocks for auxiliary data (e.g., physical consumption CSV). This ensures the core visualization pipeline remains uninterrupted even if secondary data sources are missing or encoded incorrectly, demonstrating production-level code robustness.
