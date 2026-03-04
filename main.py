@@ -48,3 +48,5 @@ except Exception as e:
     print(f"⚠️ Skip automated analysis of physical data (please verify CSV column names match): {e}")
 
 
+
+# Please download numpy, pandas, and matplotlib.
