@@ -1,37 +1,26 @@
-# Beijing-Consumption-Analysis-2015-2024
-Empirical analysis of the evolution of consumption structure among Beijing urban and rural residents using Python.
-2015-2024 Empirical Analysis of Beijing Urban and Rural Residents' Consumption Structure Evolution
-
-This project employs Python to conduct in-depth analysis of Beijing's statistical data over the past decade,
-multidimensionally illustrating the historical progression of consumption upgrades among residents of this megacity—shifting from subsistence-oriented to enjoyment-oriented spending.
-
-Key Insights
-
-1. Engel's Coefficient: Crossing the “Extremely Affluent” Threshold
-Data Findings: Beijing's urban Engel's coefficient dropped to “19.87%” in 2024, breaking below the 20% threshold for the first time.
-Empirical Supplement: Analysis of per capita physical consumption data reveals urban residents' grain consumption decreased from “88.5kg” in 2015 to “81.9kg” in 2024.
-Conclusion: The decline in food expenditure share, accompanied by reduced staple intake and optimized dietary structure, signifies residents' entry into an extremely affluent stage of living.
-
-2. Service Consumption: Urban-Rural Convergence and Rural Momentum
-Key Inflection Point: In 2017, rural service consumption surpassed urban for the first time.
-Driving Factors: Benefiting from widespread rural communication infrastructure and expanded medical insurance coverage. By 2024, rural service consumption reached 29.41%, on par with urban levels.
-
- 3. Consumption Resilience: Structural Adjustment Amid Major Shocks
-2020 Observations: External factors caused a sharp decline in discretionary spending (entertainment, apparel), while healthcare and housing expenditures demonstrated remarkable resilience.
-
----
-
-Technical Implementation (Tech Stack)
-Language: Python 3.10+
-Libraries: Pandas (data cleaning), Matplotlib (professional visualization), Numpy (matrix operations)
-Cleaning Strategy: Utilized regular expressions and slicing techniques to resolve special characters (e.g., missing numeric digits) and transposition alignment issues in the original Excel files.
-
-Directory Description
- `/data`: Contains raw urban, rural, and physical consumption volume datasets.
- `/scripts`: Core computational logic and plotting code.
- `/images`: Includes Engel trend charts, radar charts, stacked charts, and service share diagrams.
-
-Challenges and Retrospective
-Dimension Mismatch: Resolved Matplotlib's (9,) vs. (11,) dimension error during radar chart generation using a circular closing algorithm.
-Data Alignment: Ensured strict alignment of urban/rural indicators across years through multi-table joins, maintaining analytical rigor.
-Exception Handling & Robustness: Implemented try-except blocks for auxiliary data (e.g., physical consumption CSV). This ensures the core visualization pipeline remains uninterrupted even if secondary data sources are missing or encoded incorrectly, demonstrating production-level code robustness.
+# 2015-2024年北京消费分析
+## 运用Python对北京城乡居民消费结构演变进行实证分析
+### 2015-2024年北京城乡居民消费结构演变实证分析
+本项目运用Python对北京过去十年的统计数据进行深入分析，多维度展现这座超大城市居民消费从生存型向享受型升级的历史进程。
+### 关键洞察
+1. **恩格尔系数：跨越“极其富裕”门槛**
+   - **数据发现**：2024年北京城镇恩格尔系数降至“19.87%”，首次跌破20%关口。
+   - **实证补充**：人均实物消费数据分析显示，城镇居民粮食消费量从2015年的“88.5千克”降至2024年的“81.9千克”。
+   - **结论**：食品支出占比下降，叠加主食摄入减少、饮食结构优化，标志着居民生活进入极其富裕阶段。
+2. **服务消费：城乡趋同与农村动能**
+   - **关键拐点**：2017年，农村服务消费占比首次超过城镇。
+   - **驱动因素**：得益于农村通信基础设施普及和医保覆盖范围扩大。截至2024年，农村服务消费占比达29.41%，与城镇水平持平。
+3. **消费韧性：重大冲击下的结构调整**
+   - **2020年观察**：外部因素导致可选消费（娱乐、服装）大幅下降，而医疗保健和居住支出展现出显著韧性。
+### 技术实现（技术栈）
+- **语言**：Python 3.10+
+- **库**：Pandas（数据清洗）、Matplotlib（专业可视化）、Numpy（矩阵运算）
+- **清洗策略**：运用正则表达式和切片技术，解决原始Excel文件中的特殊字符（如数字缺失）和转置对齐问题。
+### 目录说明
+- `/data`：包含城镇、农村及实物消费量原始数据集。
+- `/scripts`：核心计算逻辑与绘图代码。
+- `/images`：包含恩格尔趋势图、雷达图、堆叠图及服务占比图。
+### 挑战与回顾
+- **维度不匹配**：采用环形闭合算法，解决了雷达图生成时Matplotlib出现的(9,)与(11,)维度错误。
+- **数据对齐**：通过多表关联确保城乡指标跨年份严格对齐，保证分析严谨性。
+- **异常处理与稳健性**：对辅助数据实施try-except异常捕获。即便次要数据源缺失或编码错误，核心可视化流程仍可不受影响，展现生产级代码的稳健性。
